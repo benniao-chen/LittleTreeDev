@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <!-- for-mobile-apps -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="Dazzly Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design"/>
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <!-- //for-mobile-apps -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/button.css" rel="stylesheet" type="text/css" media="all"/>
+
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- js -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <!-- //js -->
+    <!-- menu -->
+    <link href="css/component.css" rel="stylesheet" type="text/css"/>
+    <!-- //menu -->
+    <!-- gallery -->
+    <script src="js/jquery.chocolat.js"></script>
+    <link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8">
+    <!--light-box-files -->
+    <script type="text/javascript" charset="utf-8">
+        $(function () {
+            $('.gallery a').Chocolat();
+        });
+    </script>
+    <!-- //gallery -->
+    <!-- start-smoth-scrolling -->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
+            });
+        });
+    </script>
+    <!-- start-smoth-scrolling -->
+    <link href='http://fonts.useso.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
+</head>
+
+<body class="cbp-spmenu-push">
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-30027142-1', 'w3layouts.com');
+    ga('send', 'pageview');
+</script>
+<!-- banner -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">小树成长</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="搜索">
+                </div>
+                <button type="submit" class="btn btn-default">提交</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" data-toggle="modal" data-target="#myModal">注册</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">登录 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">当前用户</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">退出</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<!--modal-->
+<div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">欢迎注册小树成长</h4>
+            </div>
+            <div class="modal-body">
+                <div class="login-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control login-field" value="" placeholder="Enter your name" id="login-name" />
+                        <label class="login-field-icon fui-user" for="login-name"></label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" class="form-control login-field" value="" placeholder="Password" id="login-pass" />
+                        <label class="login-field-icon fui-lock" for="login-pass"></label>
+                    </div>
+
+                    <a class="btn btn-primary btn-lg btn-block" href="#">Log in</a>
+                    <a class="login-link" href="#">Lost your password?</a>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="button button-3d button-action button-pill" data-dismiss="modal">取消</button>
+                <button type="button" class="button button-3d button-action button-pill" onclick="notice()"><a href="index.html" style="color: white">提交</a></button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--//modal-->
+<div class="banner">
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <a href="index.html">Dazzly</a>
+            </div>
+            <div class="top-nav">
+                <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s2">
+                    <h3>Menu</h3>
+                    <ul>
+                        <li class="active"><a href="index.html">首页</a></li>
+                        <li><a href="#services" class="scroll">产品定位</a></li>
+                        <li><a href="#about" class="scroll">私人定制</a></li>
+                        <!--<li><a href="#events" class="scroll">职业路线生成</a></li>-->
+                        <li><a href="#portfolio" class="scroll">规划师定制</a></li>
+                        <!--<li><a href="#mail" class="scroll">联系我们</a></li>-->
+
+                    </ul>
+                </nav>
+                <div class="main buttonset">
+                    <!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
+                    <button id="showRightPush"><img src="images/menu.png" alt=""/></button>
+                    <!--<span class="menu"></span>-->
+                </div>
+                <!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+                <script src="js/classie.js"></script>
+                <script>
+                    var menuRight = document.getElementById('cbp-spmenu-s2'),
+                        showRightPush = document.getElementById('showRightPush'),
+                        body = document.body;
+
+                    showRightPush.onclick = function () {
+                        classie.toggle(this, 'active');
+                        classie.toggle(body, 'cbp-spmenu-push-toleft');
+                        classie.toggle(menuRight, 'cbp-spmenu-open');
+                        disableOther('showRightPush');
+                    };
+
+                    function disableOther(button) {
+                        if (button !== 'showRightPush') {
+                            classie.toggle(showRightPush, 'disabled');
+                        }
+                    }
+                </script>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="banner-info">
+            <h1>小树帮助您 <span>了解职业</span></h1>
+            <p>更好走上职业生涯</p>
+        </div>
+    </div>
+</div>
+<!-- //banner -->
+<!-- about -->
+<div id="about" class="about">
+    <div class="container">
+        <h3>About <span>Me 私人定制</span></h3>
+        <div class="about-info">
+            <div class="sliderfig">
+                <ul id="flexiselDemo1">
+                    <li>
+                        <div class="about-info-left">
+                           <a href="table.html"><p><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>个人测评</p></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="about-info-left">
+                            <p><span class="glyphicon glyphicon-user" aria-hidden="true"></span>小树社区</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="about-info-left">
+                            <p><span class="glyphicon glyphicon-home" aria-hidden="true"></span>开眼资源</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="about-info-left">
+                            <p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>随心小记 </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <script type="text/javascript">
+                $(window).load(function () {
+                    $("#flexiselDemo1").flexisel({
+                        visibleItems: 4,
+                        animationSpeed: 1000,
+                        autoPlay: true,
+                        autoPlaySpeed: 3000,
+                        pauseOnHover: true,
+                        enableResponsiveBreakpoints: true,
+                        responsiveBreakpoints: {
+                            portrait: {
+                                changePoint: 480,
+                                visibleItems: 2
+                            },
+                            landscape: {
+                                changePoint: 640,
+                                visibleItems: 3
+                            },
+                            tablet: {
+                                changePoint: 768,
+                                visibleItems: 3
+                            }
+                        }
+                    });
+
+                });
+            </script>
+            <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+        </div>
+        <div class="about-grid">
+            <div class="col-md-6 about-grid-left">
+                <img src="images/1.jpg" alt=" " class="img-responsive"/>
+            </div>
+            <div class="col-md-6 about-grid-right">
+                <h2>小树成长计划产品定位</h2>
+                <h4>致力于解决用户在生涯中遇到的职业困惑</h4>
+                <p style="text-indent: 2em">
+                    职业困惑是在哪个年龄阶段都会出现的，只不过不同年龄阶段遇到的困惑不同，
+                    从大学生到工作零到三年的职场新人，三年到五年，五年到十年的都会有的。
+                    目前用户主要集中为在校大学生：在时间自主安排下较为迷茫的同学，帮助他们设立自己的职业目标并制定可行的行动方案。用户通过达到一个个阶段性成果，不断提升自我价值，最终找到一份自己满意的工作，达到自己预期估值。</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!-- //about -->
+<!-- get-in -->
+
+<!-- services -->
+<div class="copyrights">Collect from <a href="http://www.cssmoban.com/">企业网站模板</a></div>
+<div id="services" class="services" style="margin-top: -10%">
+    <div class="container" href="">
+        <h3><span>产品</span> 定位</h3>
+        <div class="row work-row">
+            <div class="service-grid">
+                <div class="col-sm-6 col-md-4 work-row-grids wow bounceIn animated" data-wow-delay=".5s"
+                     style="visibility: visible; -webkit-animation-delay: .5s;">
+                    <div class="work-grids-img">
+                        <span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span>
+                    </div>
+                    <div class="caption work-captn">
+                        <h4>一站式服务</h4>
+                        <p>职业测评、规划师挑选、职业路径规划、资源对接</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 work-row-grids wow bounceIn animated" data-wow-delay=".5s"
+                     style="visibility: visible; -webkit-animation-delay: .5s;">
+                    <div class="work-grids-img">
+                        <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+                    </div>
+                    <div class="caption work-captn">
+                        <h4>精准定位</h4>
+                        <p>结合大数据技术精准定位个人发展路线，提供职业路途明灯</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 work-row-grids wow bounceIn animated" data-wow-delay=".5s"
+                     style="visibility: visible; -webkit-animation-delay: .5s;">
+                    <div class="work-grids-img">
+                        <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+                    </div>
+                    <div class="caption work-captn">
+                        <h4>贴心指导</h4>
+                        <p>遇到困难？小树成长为您提供一对一专业指导</p>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="service-grid">-->
+                <!--<div class="col-sm-6 col-md-4 work-row-grids wow bounceIn animated" data-wow-delay=".5s"-->
+                     <!--style="visibility: visible; -webkit-animation-delay: .5s;">-->
+                    <!--<div class="work-grids-img">-->
+                        <!--<span class="glyphicon glyphicon-sound-5-1" aria-hidden="true"></span>-->
+                    <!--</div>-->
+                    <!--<div class="caption work-captn">-->
+                        <!--<h4>ipsumorem</h4>-->
+                        <!--<p>odioero eos et accusamus et iusto dignissimos ducimus</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-sm-6 col-md-4 work-row-grids wow bounceIn animated" data-wow-delay=".5s"-->
+                     <!--style="visibility: visible; -webkit-animation-delay: .5s;">-->
+                    <!--<div class="work-grids-img">-->
+                        <!--<span class="glyphicon glyphicon-oil" aria-hidden="true"></span>-->
+                    <!--</div>-->
+                    <!--<div class="caption work-captn">-->
+                        <!--<h4>ipsumorem</h4>-->
+                        <!--<p>odioero eos et accusamus et iusto dignissimos ducimus</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-sm-6 col-md-4 work-row-grids wow bounceIn animated" data-wow-delay=".5s"-->
+                     <!--style="visibility: visible; -webkit-animation-delay: .5s;">-->
+                    <!--<div class="work-grids-img">-->
+                        <!--<span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>-->
+                    <!--</div>-->
+                    <!--<div class="caption work-captn">-->
+                        <!--<h4>ipsumorem</h4>-->
+                        <!--<p>odioero eos et accusamus et iusto dignissimos ducimus</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="clearfix"></div>-->
+            <!--</div>-->
+        </div>
+    </div>
+</div>
+<!-- //services -->
+<!-- events -->
+<!-- //events -->
+<!-- portfolio -->
+
+<div id="portfolio" style="margin-top: -5%">
+    <div class="container">
+        <a href="careerplanner.html"><h3 style="color:black">规划师定制</h3></a>
+        <div class="gallery-grids" style="margin-top:5px">
+            <div class="col-md-6 baner-top">
+                <figure class="effect-bubba">
+                    <a href="careerplanner.html" rel="title">
+                        <img src="images/2.jpg" alt="" class="img-responsive"/>
+                        <figcaption>
+                            <h4>Enimet pulvinar</h4>
+                            <p>资深生涯咨询师/督导、培训师、个人优势教练；《生涯规划师》课程研发组核心成员；澳洲Dulwich Centre认证叙事治疗师</p>
+                        </figcaption>
+                    </a>
+                </figure>
+            </div>
+            <div class="col-md-6 baner-top">
+                <figure class="effect-bubba">
+                    <a href="images/3.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+                        <img src="images/3.jpg" alt="" class="img-responsive"/>
+                        <figcaption>
+                            <h4>Bosuere Resime</h4>
+                            <p>生涯咨询资深专家，国家认证生涯规划师(CMT)，TA人际沟通分析学国际沟通分析治疗师（CTA）</p>
+                        </figcaption>
+                    </a>
+                </figure>
+            </div>
+            <div class="clearfix"></div>
+            <div class="baner-row">
+                <div class="col-md-4 baner-bottom">
+                    <figure class="effect-bubba">
+                        <a href="images/6.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+                            <img src="images/6.jpg" alt="" class="img-responsive"/>
+                            <figcaption>
+                                <h4 class="sec">Jarema Ran</h4>
+                                <p>国家认证生涯规划师(CMT)培训师。拥有IT、媒体、政府部门、教育培训十多年的从业经验</p>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </div>
+                <div class="col-md-4 baner-bottom">
+                    <figure class="effect-bubba">
+                        <a href="images/7.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+                            <img src="images/7.jpg" alt=""/ class="img-responsive" >
+                            <figcaption>
+                                <h4 class="sec">Linare Monre</h4>
+                                <p>“英雏计划“职场技能培训特聘讲师</p>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </div>
+                <div class="col-md-4 baner-bottom">
+                    <figure class="effect-bubba">
+                        <a href="images/8.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+                            <img src="images/8.jpg" alt=""/ class="img-responsive" >
+                            <figcaption>
+                                <h4 class="sec">Enimet Sares</h4>
+                                <p>国内知名职业发展专家，特邀职业规划师</p>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!-- //portfolio -->
+<!--欢迎您和我们联系-->
+<div class="get-in-grids">
+    <div class="container">
+        <div class="get-in-grid-left">
+            <p>欢迎您和我们联系！</p>
+        </div>
+        <div class="get-in-grid-right">
+            <form>
+                <input type="text" value="请输入您的邮箱..." onFocus="this.value = '';"
+                       onBlur="if (this.value == '') {this.value = 'Enter Your Mail...';}" required="">
+                <input type="submit" value="发送">
+            </form>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!--//欢迎您和我们联系-->
+<!-- footer -->
+<div class="footer-margin">
+    <p>Copyright &copy; 2015.Company name All rights reserved.More Templates
+        <a href="#" target="_blank" title="模板之家">小树成长计划</a>
+        - 版权所有
+        <a href="#" title="版权所有"></a></p>
+</div>
+<!-- //footer -->
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/bootstrap.js"></script>
+<!-- here stars scrolling icon -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $().UItoTop({easingType: 'easeOutQuart'});
+    });
+    notice = function () {
+        alert("恭喜您，已在小树平台注册成功");
+    }
+</script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>
